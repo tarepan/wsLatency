@@ -6,6 +6,8 @@ Performance test for webScoket in various envs.
 - local Docker multi-container with Bridge
 - AWS ECS
 
+AWS ECS is set with CI/CD
+
 ## Architecture
 
 `server.js` & `client.js`  
