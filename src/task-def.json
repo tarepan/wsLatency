@@ -17,5 +17,6 @@
   ],
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
-  "memory": "512"
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::516292881072:role/ecsTaskExecutionRole"
 }
