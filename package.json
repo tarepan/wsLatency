@@ -1,0 +1,14 @@
+{
+  "name": "wslatency",
+  "version": "1.0.0",
+  "description": "webSocket latency measure",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ./build/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.2.3"
+  }
+}

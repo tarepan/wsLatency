@@ -1,0 +1,15 @@
+version: "3"
+services:
+  server.local:
+    build:
+      context: .
+      dockerfile: server.Dockerfile
+    ports:
+      - "8080"
+
+  client.local:
+    build:
+      context: .
+      dockerfile: client.Dockerfile
+    depends_on:
+      - server.local
