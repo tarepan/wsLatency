@@ -19,6 +19,6 @@ wss.on("connection", function connection(ws) {
     const [serverTime, clientTime] = extractClientMessage(data);
     const biLatency = now - serverTime;
     const biLatencyMsecStg = (parseFloat(biLatency) / 1000 / 1000).toFixed(3);
-    console.log(`${data}, RTT: ${biLatencyMsecStg} [msec]`);
+    console.log(`${data}, RTT: ${biLatencyMsecStg} [msec] v2`);
   });
 });

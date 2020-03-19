@@ -1,4 +1,10 @@
 FROM node:alpine
 
-COPY . /app
-CMD node /app/src/client.js
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+RUN ["npm", "ci", "--only=production"]
+
+COPY . .
+
+CMD [ "node", "src/client.js" ]
